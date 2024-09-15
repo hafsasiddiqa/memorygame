@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Memory Game
 
-## Getting Started
+This is a simple Memory Game built using Nextjs, Typescript and styled with Tailwind CSS. The objective of the game is to match all pairs of cards within a limited number of turns.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dynamic Card Generation**: The cards are randomly shuffled each time the game starts.
+- **Turn-Based Gameplay**: The player has a limited number of turns (16) to match all the pairs.
+- **Game Over Conditions**: The game ends when either all pairs are matched (win) or the player runs out of turns (lose).
+- **Responsive Design**: The game layout is responsive and adapts to various screen sizes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Nextjs**: For building the user interface and managing the game state.
+- **Tailwind CSS**: For styling the application with utility-first CSS classes.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## How to Play
 
-## Learn More
+1. Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/hafsasiddiqa/memory-game.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd memory-game
+    ```
+3. Install the necessary dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm run dev
+    ```
+5. Open your browser and navigate to `http://localhost:3000` to play the game.
 
-To learn more about Next.js, take a look at the following resources:
+## Game Rules
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Objective**: Match all pairs of cards within 16 turns.
+- **How to Play**:
+  - Click on a card to flip it over.
+  - Try to find the matching card by clicking on another card.
+  - If the cards match, they remain flipped. If not, they flip back after a short delay.
+  - The game ends when all cards are matched, or when you run out of turns.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+- **`components/MemoryGame.tsx`**: The main game component, containing all the game logic and UI elements.
+- **`styles/globals.css`**: Global styles, including Tailwind's base styles.
+- **`public/`**: Static assets such as images, icons, etc.
+- **`pages/index.tsx`**: The main page that renders the Memory Game component.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Modify Game Difficulty**: To change the difficulty (number of turns or cards), you can edit the logic in the `MemoryGame.tsx` component.
+- **Add New Symbols**: You can easily add or replace the card symbols by modifying the `CardSymbol` type and the `symbols` array in the `generateCards` function.
+
+## Future Improvements
+
+- **Timer**: Add a timer to challenge the player further.
+- **Multiple Levels**: Introduce multiple difficulty levels with varying numbers of cards and turns.
+- **Scoring System**: Implement a scoring system based on time taken and turns used.
+
+
+## Acknowledgments
+
+- Thanks to the Nextjs, Typescript and Tailwind CSS communities for their excellent documentation and resources.
+
+---
+
+Enjoying play Memory Game 😊. Feel free to fork and contribute to this project!
