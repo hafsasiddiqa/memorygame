@@ -18,11 +18,11 @@ This is a simple Memory Game built using Nextjs, Typescript and styled with Tail
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/hafsasiddiqa/memory-game.git
+    git clone https://github.com/hafsasiddiqa/memorygame.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd memory-game
+    cd memorygame
     ```
 3. Install the necessary dependencies:
     ```bash
